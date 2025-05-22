@@ -1,0 +1,439 @@
+{
+    "version": 8,
+    "name": "Shanghai",
+    "metadata": {
+        "mapbox:print": {
+            "width": 1024,
+            "height": 768,
+            "units": "px",
+            "format": "png",
+            "resolution": 300
+        }
+    },
+    "center": [121.485, 31.236],
+    "zoom": 14.2,
+    "sources": {
+        "composite": {
+            "url": "mapbox://mapbox.mapbox-streets-v8",
+            "type": "vector"
+        }
+    },
+    "sprite": "mapbox://sprites/{username}/{style_id}",
+    "glyphs": "mapbox://fonts/{username}/{fontstack}/{range}.pbf",
+    "layers": [
+        {
+            "id": "Background",
+            "type": "background",
+            "paint": {
+                "background-color": "#f5f4ef"
+            }
+        },
+        {
+            "id": "Commercial_area",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "landuse",
+            "paint":{
+                "fill-opacity": [
+                    "match",
+                    ["get","class"],
+                    ["commercial_area"],
+                    1,
+                    0
+                ],
+                "fill-color": "#f0e7cc",
+                "fill-outline-color": "#f9e401"
+            }
+        },
+        {
+            "id": "Green_space",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "landuse",
+            "paint":{
+                "fill-opacity": [
+                    "match",
+                    ["get","class"],
+                    ["park","wood","grass"],
+                    1,
+                    0
+                ],
+                "fill-color": "#e6e7d5",
+                "fill-outline-color": "#cfded2"
+            }
+        },
+        {
+            "id": "Water",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "water",
+            "paint": {
+                "fill-opacity": 1,
+                "fill-color": "#c1ccd7",
+                "fill-outline-color": "#bfcdd4"
+            }
+        },
+        {
+            "id": "Commercial_building",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "building",
+            "paint": {
+                "fill-opacity": [
+                    "match",
+                    ["get", "type"],
+                    ["retail", "commercial", "hotel"],
+                    1,
+                    0
+                ],
+                "fill-color": "#efdce2",
+                "fill-outline-color": "#ebdbdb"
+            }
+        },
+        {
+            "id": "Residential_building",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "building",
+            "paint": {
+                "fill-opacity": [
+                    "match",
+                    ["get", "type"],
+                    ["building", "apartments", "hut"],
+                    1,
+                    0
+                ],
+                "fill-color": "#e9e2e8",
+                "fill-outline-color": "#f1e2f3"
+            }
+        },
+        {
+            "id": "Walkway",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "road",
+            "paint": {
+                "line-opacity": [
+                    "match",
+                    ["get", "class"],
+                    ["pedestrian"],
+                    1,
+                    0
+                ],
+                "line-color": "#dcddc5",
+                "line-width": 1.5
+            }
+        },
+        {
+            "id": "Street",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "road",
+            "paint": {
+                "line-opacity": [
+                    "match",
+                    ["get", "class"],
+                    ["street"],
+                    1,
+                    0
+                ],
+                "line-color": "#e6dbc7",
+                "line-width": 1.5
+            }
+        },
+        {
+            "id": "Tertiary_road",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "road",
+            "paint": {
+                "line-opacity": [
+                    "match",
+                    ["get", "class"],
+                    ["tertiary"],
+                    1,
+                    0
+                ],
+                "line-color": "#e6ddcb",
+                "line-width": 2.5
+            }
+        },
+        {
+            "id": "Secondary_road",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "road",
+            "paint": {
+                "line-opacity": [
+                    "match",
+                    ["get", "class"],
+                    ["secondary"],
+                    1,
+                    0
+                ],
+                "line-color": "#e6ddcb",
+                "line-width": 2.5
+            }
+        },
+        {
+            "id": "Primary_road",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "road",
+            "paint": {
+                "line-opacity": [
+                    "match",
+                    ["get", "class"],
+                    ["primary"],
+                    1,
+                    0
+                ],
+                "line-color": "#e6ddcb",
+                "line-width": 4
+            }
+        },
+        {
+            "id": "Metro",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "road",
+            "paint": {
+                "line-opacity": [
+                    "match",
+                    ["get", "class"],
+                    ["major_rail"],
+                    1,
+                    0
+                ],
+                "line-color": "#ebe2c2",
+                "line-width": 4
+            }
+        },
+        {
+            "id": "Water_label",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "natural_label",
+            "layout": {
+                "text-field": [
+                    "match",
+                    ["get", "class"],
+                    ["water"],
+                    ["to-string", ["get", "name_en"]],
+                    ""
+                ],
+                "text-font": ["Source Sans Pro Italic"],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#8799ab",
+                "text-halo-color": "#ffffff",
+                "text-halo-width": 0,
+                "text-halo-blur": 0
+            }
+        },
+        {
+            "id": "Settlement_label",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "place_label",
+            "layout": {
+                "text-field": [
+                    "match",
+                    ["get", "class"],
+                    ["settlement"],
+                    ["to-string", ["get", "name_en"]],
+                    ""
+                ],
+                "text-font": ["Source Code Pro Regular"],
+                "text-size": 14
+            },
+            "paint": {
+                "text-color": "#57543d",
+                "text-halo-color": "#ffffff",
+                "text-halo-width": 1,
+                "text-halo-blur": 0.5
+            }
+        },
+        {
+            "id": "Street_label",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "road",
+            "layout": {
+                "text-field": [
+                    "match",
+                    ["get", "class"],
+                    ["street"],
+                    ["to-string", ["get", "name_en"]],
+                    ""
+                ],
+                "text-font": ["Source Sans Pro Regular"],
+                "text-size": 10,
+                "symbol-placement": "line"
+            },
+            "paint": {
+                "text-color": "#616161",
+                "text-halo-color": "#e6dbc7",
+                "text-halo-width": 1,
+                "text-halo-blur": 0
+            }
+        },
+        {
+            "id": "Tertiary_road_label",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "road",
+            "layout": {
+                "text-field": [
+                    "match",
+                    ["get", "class"],
+                    ["tertiary"],
+                    ["to-string", ["get", "name_en"]],
+                    ""
+                ],
+                "text-font": ["Source Sans Pro Regular"],
+                "text-size": 13.5,
+                "symbol-placement": "line"
+            },
+            "paint": {
+                "text-color": "#616161",
+                "text-halo-color": "#e6dbc7",
+                "text-halo-width": 1,
+                "text-halo-blur": 0
+            }
+        },
+        {
+            "id": "Secondary_road_label",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "road",
+            "layout": {
+                "text-field": [
+                    "match",
+                    ["get", "class"],
+                    ["secondary"],
+                    ["to-string", ["get", "name_en"]],
+                    ""
+                ],
+                "text-font": ["Source Sans Pro Regular"],
+                "text-size": 13.5,
+                "symbol-placement": "line"
+            },
+            "paint": {
+                "text-color": "#616161",
+                "text-halo-color": "#e6dbc7",
+                "text-halo-width": 1,
+                "text-halo-blur": 0
+            }
+        },
+        {
+            "id": "Primary_road_label",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "road",
+            "layout": {
+                "text-field": [
+                    "match",
+                    ["get", "class"],
+                    ["primary"],
+                    ["to-string", ["get", "name_en"]],
+                    ""
+                ],
+                "text-font": ["Source Sans Pro Regular"],
+                "text-size": 13.5,
+                "symbol-placement": "line"
+            },
+            "paint": {
+                "text-color": "#616161",
+                "text-halo-color": "#e6dbc7",
+                "text-halo-width": 1,
+                "text-halo-blur": 0
+            }
+        },
+        {
+            "id": "Natural_landscape_label",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "poi_label",
+            "layout": {
+                "text-field": [
+                    "match",
+                    ["get", "class"],
+                    ["park_like"],
+                    ["to-string", ["get", "name_en"]],
+                    ""
+                ],
+                "text-font": ["DIN Pro Medium"],
+                "text-size": 11
+            },
+            "paint": {
+                "text-color": "#83a085",
+                "text-halo-color": "#ffffff",
+                "text-halo-width": 0.5,
+                "text-halo-blur": 0.5
+            }
+        },
+        {
+            "id": "Cultural_landscape_label",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "poi_label",
+            "layout": {
+                "text-field": [
+                    "match",
+                    ["get", "class"],
+                    ["arts_and_entertainment"],
+                    ["to-string", ["get", "name_en"]],
+                    ""
+                ],
+                "text-font": ["DIN Pro Medium"],
+                "text-size": 11
+            },
+            "paint": {
+                "text-color": "#b99f92",
+                "text-halo-color": "#ffffff",
+                "text-halo-width": 0.5,
+                "text-halo-blur": 0.5
+            }
+        },
+        {
+            "id": "Metro_station",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "transit_stop_label",
+            "layout": {
+                "icon-image": [
+                    "match",
+                    ["get", "stop_type"],
+                    ["station"],
+                    "Metro_station",
+                    ""
+                ],
+                "icon-size": 0.09
+            },
+            "paint": {
+                "icon-opacity": 0.75
+            }
+        },
+        {
+            "id": "Oriental_pearl_tower",
+            "type": "symbol",
+            "source": "composite",
+            "source-layer": "poi_label",
+            "layout": {
+                "icon-image": [
+                    "match",
+                    ["get", "class"],
+                    ["landmark"],
+                    "Oriental_pearl_tower",
+                    ""
+                ],
+                "icon-size": 0.25
+            },
+            "paint": {
+                "icon-opacity": 1
+            }
+        }
+    ]
+}
