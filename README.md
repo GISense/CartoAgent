@@ -20,6 +20,24 @@ This repo provides the official Python implementation of CartoAgent, along with 
 | ./teaching/Lab7PromptTutorial.docx          | Prompt design tutorial     |
 | ./teaching/Lab7Data                         | Dataset                    |
 
+## Citation
+If you use any materials in your research, teaching, or applications, please cite this source:
+
+Wang, C., Kang, Y., Gong, Z., Zhao, P., Feng, Y., Zhang, W. and Li, G., 2025. CartoAgent: a multimodal large language model-powered multi-agent cartographic framework for map style transfer and evaluation. International Journal of Geographical Information Science, pp.1-34.
+
+```
+@article{wang2025cartoagent,
+  title={CartoAgent: a multimodal large language model-powered multi-agent cartographic framework for map style transfer and evaluation},
+  author={Wang, Chenglong and Kang, Yuhao and Gong, Zhaoya and Zhao, Pengjun and Feng, Yu and Zhang, Wenjia and Li, Ge},
+  journal={International Journal of Geographical Information Science},
+  pages={1--34},
+  year={2025},
+  publisher={Taylor \& Francis}
+}
+```
+
+Or read the preprint version on [Arxiv](https://arxiv.org/abs/2505.09936)
+
 ## 🚀 Future Directions
 
 We aim to extend CartoAgent in several directions:
@@ -32,4 +50,6 @@ We aim to extend CartoAgent in several directions:
 For questions, feedback, or collaboration inquiries, feel free to:
 
 - Open an Issue;
-- Or reach out to the maintainers directly at: chenglongw@stu.pku.edu.cn; yuhao.kang@austin.utexas.edu
+- Or reach out to the maintainers directly at:
+- Chenglong Wang: chenglongw@stu.pku.edu.cn  
+- Yuhao Kang: yuhao.kang@austin.utexas.edu  
