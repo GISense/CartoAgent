@@ -23,7 +23,7 @@ This repo provides the official Python implementation of CartoAgent, along with 
 ## Citation
 If you use any materials in your research, teaching, or applications, please cite this source:
 
-Wang, C., Kang, Y., Gong, Z., Zhao, P., Feng, Y., Zhang, W. and Li, G., 2025. CartoAgent: a multimodal large language model-powered multi-agent cartographic framework for map style transfer and evaluation. International Journal of Geographical Information Science, pp.1-34.
+Wang, C., Kang, Y., Gong, Z., Zhao, P., Feng, Y., Zhang, W. and Li, G., 2025. CartoAgent: a multimodal large language model-powered multi-agent cartographic framework for map style transfer and evaluation. International Journal of Geographical Information Science, pp.1-34. [https://www.tandfonline.com/doi/abs/10.1080/13658816.2025.2507844](https://www.tandfonline.com/doi/abs/10.1080/13658816.2025.2507844)
 
 ```
 @article{wang2025cartoagent,
@@ -36,7 +36,7 @@ Wang, C., Kang, Y., Gong, Z., Zhao, P., Feng, Y., Zhang, W. and Li, G., 2025. Ca
 }
 ```
 
-Or read the preprint version on [Arxiv](https://arxiv.org/abs/2505.09936)
+Or read the preprint version on [Arxiv](https://arxiv.org/abs/2505.09936). 
 
 ## 🚀 Future Directions
 
