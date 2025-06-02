@@ -6,12 +6,12 @@ Welcome to the official repository for our work **"CartoAgent: a multimodal larg
 
 ## 📚 Table of Contents
 
-* [About The Project](#🌟 About The Project)
-* [Folder Structure](#📁 Folder Structure)
+* [About The Project](#🌟-About-The-Project)
+* [Folder Structure](#📁-Folder-Structure)
 
-* [Future Directions](#🚀 Future Directions)
-* [Contact](#📫 Contact)
-* [Citation](#📖 Citation)
+* [Future Directions](#🚀-Future-Directions)
+* [Contact](#📫-Contact)
+* [Citation](#📖-Citation)
 
 ## 🌟 About The Project
 
@@ -21,7 +21,7 @@ The rapid development of generative artificial intelligence (GenAI) presents new
 
 ## 📁 Folder Structure
 
-![Overview](./assets/pipeline.jpg)
+![Overview](./assets/pipeline.JPG)
 
 This repository provides the official Python implementation of CartoAgent, along with teaching materials developed for the Cartography & Maps course at UT Austin. For detailed instructions on how to use the code, please refer to the [README](./research/README.md) file.
 
