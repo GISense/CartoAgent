@@ -39,7 +39,7 @@ This command will:
 
 ![Region_Results](./assets/Region_Results.JPG)
 
-## 📁 Repository Structure
+## 📁 Folder Structure
 
 | Path                            | Description                                                  |
 | ------------------------------- | ------------------------------------------------------------ |
