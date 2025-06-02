@@ -6,12 +6,13 @@ Welcome to the official repository for our work **"CartoAgent: a multimodal larg
 
 ## 📚 Table of Contents
 
-* [About The Project](#🌟-About-The-Project)
-* [Folder Structure](#📁-Folder-Structure)
+* [About The Project](#about-the-project)
+* [Folder Structure](#folder-structure)
+* [Future Directions](#future-directions)
+* [Contact](#contact)
+* [Citation](#citation)
 
-* [Future Directions](#🚀-Future-Directions)
-* [Contact](#📫-Contact)
-* [Citation](#📖-Citation)
+<a name="about-the-project"></a>
 
 ## 🌟 About The Project
 
@@ -19,9 +20,11 @@ Welcome to the official repository for our work **"CartoAgent: a multimodal larg
 
 The rapid development of generative artificial intelligence (GenAI) presents new opportunities to advance the cartographic process. Previous studies have either overlooked the artistic aspects of maps or faced challenges in creating both accurate and informative maps. In this study, we propose CartoAgent, a novel multi-agent cartographic framework powered by multimodal large language models (MLLMs). This framework simulates three key stages in cartographic practice: preparation, map design, and evaluation. At each stage, different MLLMs act as agents with distinct roles to collaborate, discuss, and utilize tools for specific purposes. In particular, CartoAgent leverages MLLMs’ visual aesthetic capability and world knowledge to generate maps that are both visually appealing and informative. By separating style from geographic data, it can focus on designing stylesheets without modifying the vector-based data, thereby ensuring geographic accuracy. As a result, the proposed CartoAgent could effectively produce maps that are not only visually appealing but also accurate and informative. We applied it to a specific task centered on map restyling, namely, map style transfer and evaluation. The effectiveness of this framework was validated through extensive experiments and a human evaluation study. CartoAgent can be extended to support a variety of cartographic design decisions and inform future integrations of GenAI in cartography.
 
+<a name="folder-structure"></a>
+
 ## 📁 Folder Structure
 
-![Overview](./assets/pipeline.JPG)
+![Pipeline](./assets/Pipeline.JPG)
 
 This repository provides the official Python implementation of CartoAgent, along with teaching materials developed for the Cartography & Maps course at UT Austin. For detailed instructions on how to use the code, please refer to the [README](./research/README.md) file.
 
@@ -33,12 +36,16 @@ This repository provides the official Python implementation of CartoAgent, along
 | ./teaching/Lab7PromptTutorial.docx          | Prompt design tutorial     |
 | ./teaching/Lab7Data                         | Dataset                    |
 
+<a name="future-directions"></a>
+
 ## 🚀 Future Directions
 
 We aim to extend CartoAgent in several directions:
 
 - 🌐 Support for diverse platforms (e.g., QGIS, Google Maps);
 - 🧠 Integration with image generation models (e.g., DALL·E) for generative icons.
+
+<a name="contact"></a>
 
 ## 📫 Contact
 
@@ -48,6 +55,8 @@ For questions, feedback, or collaboration inquiries, feel free to:
 - Or reach out to the maintainers directly at:
 - Chenglong Wang: chenglongw@stu.pku.edu.cn  
 - Yuhao Kang: yuhao.kang@austin.utexas.edu
+
+<a name="citation"></a>
 
 ## 📖 Citation
 
