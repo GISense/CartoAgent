@@ -28,13 +28,14 @@ The rapid development of generative artificial intelligence (GenAI) presents new
 
 This repository provides the official Python implementation of CartoAgent, along with teaching materials developed for the Cartography & Maps course at UT Austin. For detailed instructions on how to use the code, please refer to the [README](./research/README.md) file.
 
-| Path                                        | Description                |
-| ------------------------------------------- | -------------------------- |
-| ./research                                  | Source code for CartoAgent |
-| ./teaching                                  | Teaching materials         |
-| ./teaching/Spring25-Lab7-GRG356-CartoAI.pdf | Lecture slides             |
-| ./teaching/Lab7PromptTutorial.docx          | Prompt design tutorial     |
-| ./teaching/Lab7Data                         | Dataset                    |
+| Path                                                     | Description                |
+| -------------------------------------------------------- | -------------------------- |
+| ./research                                               | Source code for CartoAgent |
+| ./teaching                                               | Teaching materials         |
+| ./teaching/Spring25-Lab7-GRG356-CartoAI.pdf              | Lecture slides             |
+| ./teaching/Lab7PromptTutorial.docx                       | Prompt design tutorial     |
+| ./teaching/Lab7Data                                      | Dataset                    |
+| ./teaching/Fall25-Lab10-GRG356T-SpatialDataSciMaps.ipynb | Lab Python notebook        |
 
 <a name="future-directions"></a>
 
@@ -53,7 +54,8 @@ For questions, feedback, or collaboration inquiries, feel free to:
 
 - Open an Issue;
 - Or reach out to the maintainers directly at:
-- Chenglong Wang: chenglongw@stu.pku.edu.cn  
+- Chenglong Wang: chenglongw@stu.pku.edu.cn
+- Brody Manquen: manquen@utexas.edu
 - Yuhao Kang: yuhao.kang@austin.utexas.edu
 
 <a name="citation"></a>
