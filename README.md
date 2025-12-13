@@ -3,7 +3,7 @@
   <a href="https://sites.utexas.edu/gisense/">
     <img src="./assets/GISenseLabLogoJPG.jpg" alt="Logo" width="200">
 
-  <h1 align="center">CartoAgent: a multimodal large language model-powered multi-agent cartographic framework for map style transfer and evaluation</h2>
+  <h1 align="center">CartoAgent: A Multimodal Large Language Model-powered Multi-Agent Cartographic Framework for Map Style Transfer and Evaluation</h2>
 
   <p align="center">
     GISense Lab, Department of Geography and the Environment, The University of Texas at Austin.
@@ -14,7 +14,6 @@
 
 ![Results](./assets/Results.jpg)
 
-Welcome to the official repository for our work **"CartoAgent: a multimodal large language model-powered multi-agent cartographic framework for map style transfer and evaluation"**!
 
 ## 📚 Table of Contents
 
